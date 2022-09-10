@@ -1,6 +1,6 @@
-onmessage = (e) => {
-	let t;
+let t: NodeJS.Timeout;
 
+onmessage = (e) => {
 	function setDate() {
 		const date = new Date();
 
