@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Clock from '$lib/Clock.svelte';
 	import ClockWorker from '$lib/ClockWorker.svelte';
+	import StopWatch from '$lib/StopWatch.svelte';
 	import { clockWithWorkerTimeout as clock } from '$lib/stores/clock';
 </script>
 
@@ -17,6 +18,10 @@
 
 	<div>
 		Time: {$clock.toLocaleTimeString()}
+	</div>
+
+	<div style="margin-top: 3rem;">
+		<StopWatch />
 	</div>
 </section>
 
